@@ -2,7 +2,7 @@ public class Test_1 {
 
     public static void main(String[] args) {
         try {
-            System.out.println("研究生一：");
+            System.out.println("博士研究生一：");
             Doctor xm = new Doctor();
             xm.setName("胡凯莉");
             xm.setAge(20);
@@ -17,7 +17,7 @@ public class Test_1 {
             xm.find_tuition();
             xm.find_salary();
             xm.taxation();
-            System.out.println("研究生二：");
+            System.out.println("博士研究生二：");
             Doctor xf = new Doctor();
             xf.setName("周淑怡");
             xf.setAge(22);
@@ -149,7 +149,7 @@ public class Test_1 {
         public void taxation() {
             double a;
             a = 12 * ((salary - 800) * STANDARD);
-            System.out.println("每年应纳税为：" + a);
+            System.out.println("每年纳税额度为：" + a);
         }
     }
 }
