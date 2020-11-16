@@ -20,3 +20,51 @@
 3.国家最新纳税标准（系数），属于某一时期的特定固定值，与实例化对象没有关系，考虑如何用static  final修饰定义。
 4.实例化研究生类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入。
 5.根据输入情况，要在程序中做异常处理。
+
+### 实验过程:
+1 首先
+
+### 核心代码
+```
+    public static void main(String[] args) {
+        try {
+            System.out.println("博士研究生：");
+            Doctor xm = new Doctor();
+            xm.setName("胡凯莉");
+            xm.setAge(20);
+            xm.setNumber(2019310000);
+            xm.setSex("男");
+            xm.setTuition(5500);
+            xm.setSalary(1800);
+            System.out.println("学生姓名:" + xm.getName());
+            System.out.println("学生年龄:" + xm.getAge());
+            System.out.println("学生编号:" + xm.getNumber());
+            System.out.println("学生性别:" + xm.getSex());
+            xm.find_tuition();
+            xm.find_salary();
+            xm.taxation();
+            System.out.println("博士研究生2：");
+            Doctor xf = new Doctor();
+            xf.setName("周淑怡");
+            xf.setAge(22);
+            xf.setNumber(2017310001);
+            xf.setSex("女");
+            xf.setTuition(5500);
+            xf.setSalary(2000);
+            System.out.println("学生姓名:" + xf.getName());
+            System.out.println("学生年龄:" + xf.getAge());
+            System.out.println("学生编号:" + xf.getNumber());
+            System.out.println("学生性别:" + xf.getSex());
+            xf.find_tuition();
+            xf.find_salary();
+            xf.taxation();
+        } catch (Exception e) {
+            System.out.println("数据异常");
+        }
+
+    }
+```
+### 实验结果
+
+
+### 实验感想
