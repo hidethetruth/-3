@@ -22,42 +22,50 @@
 5.根据输入情况，要在程序中做异常处理。
 
 ### 实验过程:
-1 首先
+首先创建一个类，在其中设置诸多变量，如name age number等，用作数据的输入。然后用两个interface接口分别实现学生的student和teacher两种属性，其中student下应给出定义学费金额，teacher下应给出定义工资和税率。由于都是数字类型所以都用double来定义。
+
+在主类下用catch用作预处理，若出现错误则输出：数据异常。
+
+最后完善主类中内容，为变量赋值，并在后面用this进行引用。
+
+输出结果，中途出现数据异常，返回调试。
+
+结果符合预期，实验结束。
 
 ### 核心代码
 ```
     public static void main(String[] args) {
         try {
             System.out.println("博士研究生：");
-            Doctor xm = new Doctor();
-            xm.setName("胡凯莉");
-            xm.setAge(20);
-            xm.setNumber(2019310000);
-            xm.setSex("男");
-            xm.setTuition(5500);
-            xm.setSalary(1800);
-            System.out.println("学生姓名:" + xm.getName());
-            System.out.println("学生年龄:" + xm.getAge());
-            System.out.println("学生编号:" + xm.getNumber());
-            System.out.println("学生性别:" + xm.getSex());
-            xm.find_tuition();
-            xm.find_salary();
-            xm.taxation();
+            Doctor hkl = new Doctor();
+            hkl.setName("胡凯莉");
+            hkl.setAge(20);
+            hkl.setNumber(2019310000);
+            hkl.setSex("男");
+            hkl.setTuition(5500);
+            hkl.setSalary(1800);
+            System.out.println("学生姓名:" + hkl.getName());
+            System.out.println("学生年龄:" + hkl.getAge());
+            System.out.println("学生编号:" + hkl.getNumber());
+            System.out.println("学生性别:" + hkl.getSex());
+            hkl.find_tuition();
+            hkl.find_salary();
+            hkl.taxation();
             System.out.println("博士研究生2：");
-            Doctor xf = new Doctor();
-            xf.setName("周淑怡");
-            xf.setAge(22);
-            xf.setNumber(2017310001);
-            xf.setSex("女");
-            xf.setTuition(5500);
-            xf.setSalary(2000);
-            System.out.println("学生姓名:" + xf.getName());
-            System.out.println("学生年龄:" + xf.getAge());
-            System.out.println("学生编号:" + xf.getNumber());
-            System.out.println("学生性别:" + xf.getSex());
-            xf.find_tuition();
-            xf.find_salary();
-            xf.taxation();
+            Doctor zsy = new Doctor();
+            zsy.setName("周淑怡");
+            zsy.setAge(22);
+            zsy.setNumber(2017310001);
+            zsy.setSex("女");
+            zsy.setTuition(5500);
+            zsy.setSalary(2000);
+            System.out.println("学生姓名:" + zsy.getName());
+            System.out.println("学生年龄:" + zsy.getAge());
+            System.out.println("学生编号:" + zsy.getNumber());
+            System.out.println("学生性别:" + zsy.getSex());
+            zsy.find_tuition();
+            zsy.find_salary();
+            zsy.taxation();
         } catch (Exception e) {
             System.out.println("数据异常");
         }
@@ -65,6 +73,23 @@
     }
 ```
 ### 实验结果
-
+博士研究生1：
+学生姓名:胡凯莉
+学生年龄:20
+学生编号:2019310000
+学生性别:男
+学费缴纳成功，金额为：5500.0
+工资发放成功，金额为：1600.0
+每年纳税额度为：2400.0
+博士研究生2：
+学生姓名:周淑怡
+学生年龄:20
+学生编号:2017310001
+学生性别:女
+学费缴纳成功，金额为：5500.0
+工资发放成功，金额为：1760.0
+每年纳税额度为：2880.0
 
 ### 实验感想
+通过这次实验我掌握了不同接口的用法，并用预处理方式处理了实验中的问题，最后通过不断修改完成了实验内容。提交后我会再根据不足和以后对代码的理解再加深之后再对程序进行修改和完善。
+
